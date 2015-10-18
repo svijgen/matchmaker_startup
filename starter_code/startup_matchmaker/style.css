@@ -19,7 +19,7 @@ header {
 
 h1 {
 	font-family: "Merriweather", serif;
-	padding: 20px;
+	padding: 22px 22px 0px 22px;
 }
 
 nav {
@@ -30,12 +30,20 @@ nav {
 
 nav li {
 	display: inline-block;
-	font-size: 18px;
+	font-size: 22px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-p .graysection {
+li:nth-child(1) {
+	font-weight: 900;
+}
+
+li:nth-child(2) {
+	font-weight: 900;
+}
+
+.graysection {
 	font-size: 20px;
 	font-weight: 900px;
 	font-style: italic;
@@ -44,7 +52,6 @@ p .graysection {
 	background-color: #d3d3d3;
 	padding: 20px;
 	margin: 0px;
-
 }
 
 del {
@@ -58,8 +65,9 @@ ins {
 
 section.sectionone {
 	background: url(images/coworking.jpg);
-	margin: 0px;
+	margin: 0px 0px 25px 0px;
 	background-size: cover;
+	border: .5px solid gray;
 }
 
 .meetyourmatch {
@@ -74,7 +82,7 @@ section.sectionone {
 
 h3 {
 	font-size: 32px;
-	margin-left: 50px;
+	margin-left: 40px;
 	margin-bottom: 0px;
 	
 }
@@ -84,45 +92,86 @@ h3 {
 	font-size: 24px;
 	text-align: left;
 	font-style: normal;
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 40px;
+	margin-right: 15px;
+	padding-bottom: 10px;
 	
 
 }
-.meetyourmatch button {
+.button {
 	border-radius: 5px;
 	background-color: #f9e42e;
 	font-size: 22px;
+	font-weight: 700;
 	text-align: center;
-	margin-left: 75px;
-	margin-bottom: 100px;
-	padding: 5px 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+	padding: 15px 20px;
+	box-shadow: 0px 3px 1px #D6C537;
 }
 
-.threedivs div {
+.threedivs {
 	display: inline-block;
-	font-size: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
+	font-size: 15px;
+	width: 1024px;
+
 }
 
-.threedivs h3 {
+.threedivsection {
+	width: 329px;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-bottom: 20px;
+	/*border: 1px solid black;*/
+}
+
+.threedivsection:nth-child(2) {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+
+.threedivs h4 {
+	font-size: 24px;
+	font-weight: 400px;
+	font-family: "Merriweather";
+	text-align: center;
+}
+
+.threedivs p {
 	font-size: 20px;
+	font-weight: 300;
+	margin-left: 20px;
+}
+.threedivsbutton {
+	border-radius: 5px;
+	background-color: #d3d3d3;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 800;
+	font: 28px;
+	margin: 0px 50px;
+	box-shadow: 0px 2px 1px gray;
 }
 
+footer {
+	background-color: black;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	position: absolute;
+	width: 1024px;
+}
 
+footer p {
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	margin-left: 25px;
+	padding-bottom: 0px;
+	padding-top: 0px;
 
-
-
-
-Google Fonts:
-Merriweather, Oswald, Open Sans
-
-Useful HTML Tags:
-<del> <ins>
-
-
-CSS Properties:
-box-shadow, overflow, background-image
-
+}
 
